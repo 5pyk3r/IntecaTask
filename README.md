@@ -29,14 +29,14 @@
 ### SpringBoot Product
 
 #### /products/GetProducts
-   It should gets all products which has credit with id passed from /credits/GetCredits
+   It should return list of products which has credit with ids passed from /credits/GetCredits
 #### /products/CreateProducts
    It saves new product.
     
 ###SpringBoot Customer
 
 #### /customers//GetCustomers
-   It should gets all customers which has credit with ids passed from /credits/GetCredits
+   It should return all customers which has credit with ids passed from /credits/GetCredits
     
 #### /customers/CreateCustomer
    It saves new customer in db.
