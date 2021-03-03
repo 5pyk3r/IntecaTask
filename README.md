@@ -8,7 +8,7 @@
   - Docker 3+
   
   Unfortunately I didn't know how to create maven script for running all docker containers.
-  Anyway for running docker containers you should:
+  Anyway for running all four docker containers you should:
   1. Pull repository
   2. In parent directory run: 
    ```
