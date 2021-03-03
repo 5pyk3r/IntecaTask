@@ -1,0 +1,35 @@
+version: "3.8"
+
+services:
+  database:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: db
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    ports:
+      - "3306:3306"
+  credit:
+    build:
+      context: ./SpringBoot-Credit
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      - database
+  product:
+    build:
+      context: ./SpringBoot Product
+      dockerfile: Dockerfile
+    ports:
+      - "8081:8081"
+    depends_on:
+      - database
+  customer:
+    build:
+      context: ./SpringBoot Customer
+      dockerfile: Dockerfile
+    ports:
+      - "8082:8082"
+    restart: always
