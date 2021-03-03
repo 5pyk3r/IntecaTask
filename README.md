@@ -33,7 +33,7 @@
 #### /products/CreateProducts
    It saves new product.
     
-###SpringBoot Customer
+### SpringBoot Customer
 
 #### /customers//GetCustomers
    It should return all customers which has credit with ids passed from /credits/GetCredits
